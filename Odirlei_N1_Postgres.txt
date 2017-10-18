@@ -1,0 +1,33 @@
+CREATE TABLE "Aluno"
+(
+  "Nome" character(1),
+  "Media" double precision,
+  "Situacao" character(1)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE "Aluno"
+  OWNER TO postgres;
+
+
+-- Column: "Nome"
+
+-- ALTER TABLE "Aluno" DROP COLUMN "Nome";
+
+ALTER TABLE "Aluno" ADD COLUMN "Nome" character(1);
+
+
+
+-- Column: "Situacao"
+
+-- ALTER TABLE "Aluno" DROP COLUMN "Situacao";
+
+ALTER TABLE "Aluno" ADD COLUMN "Situacao" character(1);
+
+
+-- Column: "Media"
+
+-- ALTER TABLE "Aluno" DROP COLUMN "Media";
+
+ALTER TABLE "Aluno" ADD COLUMN "Media" double precision;
